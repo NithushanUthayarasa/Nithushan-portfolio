@@ -13,31 +13,31 @@ function Hero() {
           transition={{ duration: 0.6 }}
           className="max-w-2xl"
         >
-          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1.5 text-xs font-medium tracking-[0.26em] text-cyan-200 uppercase">
+          <p className="mb-5 inline-flex items-center gap-2 rounded-full border border-cyan-400/30 bg-cyan-500/10 px-3 py-1.5 text-[10px] font-medium tracking-[0.12em] text-cyan-200 uppercase sm:text-xs sm:tracking-[0.26em]">
             <BrainCircuit size={14} />
             AI / ML Undergraduate
           </p>
 
-          <h1 className="text-4xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1 className="text-3xl font-black tracking-tight text-white sm:text-5xl lg:text-6xl">
             NITHUSHAN UTHAYARASA
           </h1>
 
-          <p className="mt-5 text-xl font-medium text-cyan-300 sm:text-2xl">
+          <p className="mt-5 text-lg font-medium text-cyan-300 sm:text-2xl">
             AI/ML Undergraduate
           </p>
 
-          <h2 className="mt-4 text-2xl font-semibold text-slate-100 sm:text-3xl">
+          <h2 className="mt-4 text-xl font-semibold text-slate-100 sm:text-3xl">
             Building Intelligent Systems with Machine Learning & AI
           </h2>
 
-          <p className="mt-6 max-w-xl text-base leading-7 text-slate-300 sm:text-lg">
+          <p className="mt-6 max-w-xl text-sm leading-7 text-slate-300 sm:text-lg">
             I&apos;m a third-year BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence at the Sri Lanka Institute of Information Technology, focused on building practical AI solutions through machine learning, deep learning, computer vision, and intelligent applications.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <a
               href="#projects"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_30px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_30px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300 sm:w-auto"
             >
               View My Projects
               <ArrowRight size={18} />
@@ -45,7 +45,7 @@ function Hero() {
             <a
               href="/CV_Nithushan_Uthayarasa.pdf"
               download
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-400/60 hover:text-cyan-300"
+              className="inline-flex w-full items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-400/60 hover:text-cyan-300 sm:w-auto"
             >
               <Download size={18} />
               Download Resume
@@ -72,7 +72,7 @@ function Hero() {
           initial={{ opacity: 0, scale: 0.95 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.7, delay: 0.1 }}
-          className="relative mx-auto w-full max-w-md"
+          className="relative mx-auto w-full max-w-md px-1"
         >
           <div className="absolute inset-0 -z-10 rounded-[2rem] bg-cyan-500/10 blur-3xl" />
           <div className="mb-6 flex justify-center">
@@ -80,7 +80,7 @@ function Hero() {
               <img
                 src="/Nithushan.jpeg"
                 alt="Nithushan Uthayarasa"
-                className="h-32 w-32 rounded-full object-cover object-center sm:h-36 sm:w-36 lg:h-40 lg:w-40"
+                className="aspect-square w-28 rounded-full object-cover object-center sm:w-36 lg:w-40"
               />
             </div>
           </div>

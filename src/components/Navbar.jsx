@@ -16,12 +16,12 @@ function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl">
-      <nav className="section-shell flex items-center justify-between py-4">
-        <a href="#home" className="flex items-center gap-3 text-sm font-semibold tracking-[0.22em] text-slate-100 uppercase">
+      <nav className="section-shell flex items-center justify-between gap-3 py-4">
+        <a href="#home" className="flex min-w-0 items-center gap-2 text-sm font-semibold tracking-[0.18em] text-slate-100 uppercase sm:gap-3 sm:tracking-[0.22em]">
           <span className="flex h-9 w-9 items-center justify-center rounded-full border border-cyan-400/50 bg-cyan-500/10 text-base text-cyan-300">
             N
           </span>
-          <span className="hidden sm:inline">Nithushan</span>
+          <span className="hidden truncate sm:inline">Nithushan</span>
         </a>
 
         <div className="hidden items-center gap-8 md:flex">
