@@ -83,18 +83,18 @@ function Navbar() {
             exit={{ opacity: 0, height: 0 }}
             className="border-t border-slate-800 bg-slate-950 md:hidden"
           >
-            <div className="section-shell flex flex-col gap-4 py-4">
+            <div className="section-shell flex flex-col gap-2.5 py-3">
               {navItems.map((item) => (
                 <a
                   key={item.label}
                   href={item.href}
                   onClick={() => setIsOpen(false)}
-                  className="text-sm font-medium text-slate-300 transition hover:text-cyan-300"
+                  className="text-center text-sm font-medium text-slate-300 transition hover:text-cyan-300"
                 >
                   {item.label}
                 </a>
               ))}
-              <div className="flex items-center gap-3 pt-2">
+              <div className="flex items-center justify-center gap-3 pt-1">
                 <a href="https://github.com/NithushanUthayarasa" target="_blank" rel="noreferrer" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-200">
                   <GitBranch size={18} />
                 </a>
