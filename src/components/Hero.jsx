@@ -47,7 +47,7 @@ function Hero() {
             I&apos;m a third-year BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence at the Sri Lanka Institute of Information Technology, focused on building practical AI solutions through machine learning, deep learning, computer vision, and intelligent applications.
           </p>
 
-          <div className="hero-actions mt-5 flex flex-col gap-3 sm:mt-8 sm:flex-row sm:justify-center lg:mt-6 lg:justify-start">
+          <div className="hero-actions mt-5 flex flex-col items-center gap-3 sm:mt-8 sm:flex-row sm:justify-center lg:mt-6 lg:justify-start">
             <a
               href="#projects"
               className="inline-flex w-full max-w-[280px] items-center justify-center gap-2 rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-[0_0_30px_rgba(34,211,238,0.35)] transition hover:bg-cyan-300 sm:w-auto"

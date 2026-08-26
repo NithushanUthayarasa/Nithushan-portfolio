@@ -14,6 +14,16 @@ const navItems = [
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
+  const handleNavClick = (event, href) => {
+    event.preventDefault()
+    setIsOpen(false)
+
+    window.setTimeout(() => {
+      document.querySelector(href)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.history.replaceState(null, '', href)
+    }, 250)
+  }
+
   return (
     <header className="sticky top-0 z-50 border-b border-slate-800/80 bg-slate-950/80 backdrop-blur-xl">
       <nav className="section-shell flex items-center justify-between gap-3 py-4">
@@ -88,7 +98,7 @@ function Navbar() {
                 <a
                   key={item.label}
                   href={item.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={(event) => handleNavClick(event, item.href)}
                   className="text-center text-sm font-medium text-slate-300 transition hover:text-cyan-300"
                 >
                   {item.label}

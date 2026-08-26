@@ -104,6 +104,7 @@ a {
   section[id='languages'],
   section[id='resume'],
   section[id='contact'] {
+    scroll-margin-top: 5rem;
     padding-top: 2rem !important;
     padding-bottom: 2rem !important;
   }
