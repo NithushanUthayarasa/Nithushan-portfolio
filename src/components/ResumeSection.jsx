@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 import { Download } from 'lucide-react'
 
 function ResumeSection() {
-  const resumeUrl = '/CV_Nithushan_Uthayarasa.pdf'
+  const resumeUrl = '/Nithushan_Uthayarasa_CV.pdf'
 
   return (
     <section className="section-shell py-20 sm:py-24">
@@ -33,7 +33,7 @@ function ResumeSection() {
         </div>
 
         <p className="mt-6 text-sm text-slate-400">
-          CV file: /CV_Nithushan_Uthayarasa.pdf
+          CV file: /Nithushan_Uthayarasa_CV.pdf
         </p>
       </motion.div>
     </section>

@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { ArrowUpRight, Mail, MapPin, Phone } from 'lucide-react'
+import { ArrowUpRight, Mail, MapPin } from 'lucide-react'
 
 function Contact() {
   return (
@@ -30,23 +30,13 @@ function Contact() {
               </div>
             </a>
 
-            <a href="tel:+94766960286" className="glass-card flex items-start gap-4 rounded-3xl border border-slate-800 bg-slate-900/70 p-5 transition hover:border-cyan-400/50 hover:-translate-y-1">
-              <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-300">
-                <Phone size={22} />
-              </div>
-              <div>
-                <p className="text-sm font-medium tracking-[0.2em] text-slate-400 uppercase">Phone</p>
-                <p className="mt-2 text-base text-white">0766960286</p>
-              </div>
-            </a>
-
             <div className="glass-card flex items-start gap-4 rounded-3xl border border-slate-800 bg-slate-900/70 p-5">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-cyan-500/10 text-cyan-300">
                 <MapPin size={22} />
               </div>
               <div>
                 <p className="text-sm font-medium tracking-[0.2em] text-slate-400 uppercase">Location</p>
-                <p className="mt-2 text-base text-white">Malabe, Sri Lanka</p>
+                <p className="mt-2 text-base text-white">Jaffna, Sri Lanka</p>
               </div>
             </div>
 

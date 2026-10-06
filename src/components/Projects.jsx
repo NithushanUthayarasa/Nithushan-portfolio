@@ -21,9 +21,9 @@ function Projects() {
         </a>
       </div>
 
-      <div className="grid gap-7 sm:grid-cols-2 xl:grid-cols-3">
+      <div className="grid gap-7 sm:grid-cols-2 lg:grid-cols-2">
         {projects.map((project, index) => (
-          <ProjectCard key={project.id} project={project} featured={index < 3} onViewDetails={() => setSelectedProject(project)} />
+          <ProjectCard key={project.id} project={project} featured={index < 2} onViewDetails={() => setSelectedProject(project)} />
         ))}
       </div>
 

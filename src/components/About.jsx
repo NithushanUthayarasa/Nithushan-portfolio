@@ -28,16 +28,16 @@ function About() {
           <div className="mt-8 grid gap-8 lg:grid-cols-[1.35fr_0.65fr] lg:gap-[72px] lg:items-start">
             <div className="space-y-6 text-base leading-8 text-slate-300 sm:text-lg">
               <p>
-                I&apos;m Nithushan Uthayarasa, a third-year BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence at the Sri Lanka Institute of Information Technology.
+                I am a third-year BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence at the Sri Lanka Institute of Information Technology (SLIIT).
               </p>
               <p>
-                I enjoy transforming AI concepts into practical software systems that solve real-world problems. My experience includes developing predictive models, computer vision applications, and AI-powered full-stack systems.
+                I have hands-on project experience across Machine Learning, Deep Learning, Computer Vision, Retrieval-Augmented Generation (RAG), Large Language Models (LLMs), Agentic AI, AI automation, and Full-stack AI integration.
               </p>
               <p>
-                I focus on understanding the problem, experimenting with different approaches, evaluating results, and integrating successful models into usable applications.
+                My technical approach focuses on thoroughly understanding problem requirements, building robust retrieval and model pipelines, evaluating performance with quantitative metrics, and deploying production-ready full-stack integrations.
               </p>
               <p>
-                I&apos;m currently seeking an AI/ML internship where I can contribute to real-world projects while continuing to develop my skills in AI/ML engineering.
+                My current goal is to obtain an AI/ML Engineering Internship and apply my technical and problem-solving skills to real-world AI systems.
               </p>
             </div>
 

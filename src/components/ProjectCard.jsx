@@ -17,7 +17,7 @@ function ProjectCard({ project, featured, onViewDetails }) {
         )}
       </div>
 
-      <h3 className="mt-5 text-2xl font-bold text-white">{project.title}</h3>
+      <h3 className="mt-5 text-xl sm:text-2xl font-bold text-white break-words">{project.title}</h3>
       <p className="mt-3 text-sm leading-7 text-slate-300">{project.description}</p>
 
       <div className="mt-5 flex flex-wrap gap-2">

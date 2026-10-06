@@ -15,14 +15,19 @@ const areas = [
     icon: '👁️',
   },
   {
-    title: 'Natural Language Processing',
-    description: 'Exploring NLP techniques for intelligent language-based applications.',
-    icon: '💬',
+    title: 'RAG & LLMs',
+    description: 'Building multi-document RAG pipelines, hybrid retrieval, and conversational AI systems.',
+    icon: '⚡',
   },
   {
-    title: 'AI Applications',
-    description: 'Integrating AI models into practical software and full-stack applications.',
-    icon: '⚡',
+    title: 'Agentic AI & Workflows',
+    description: 'Architecting multi-agent systems, validation agents, and LangGraph workflow automation.',
+    icon: '🤖',
+  },
+  {
+    title: 'Full-Stack AI Integration',
+    description: 'Integrating intelligent AI models into robust full-stack web and mobile systems.',
+    icon: '🚀',
   },
 ]
 

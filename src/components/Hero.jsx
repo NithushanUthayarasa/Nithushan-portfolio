@@ -40,11 +40,11 @@ function Hero() {
           </p>
 
           <h2 className="mt-3 text-lg font-semibold text-slate-100 sm:mt-4 sm:text-3xl">
-            Building Intelligent Systems with Machine Learning & AI
+            Building Intelligent Systems with Machine Learning, RAG &amp; Agentic AI
           </h2>
 
           <p className="mx-auto mt-3 max-w-xl px-1 text-sm leading-6 text-slate-300 sm:mt-6 sm:text-lg sm:leading-7 lg:mx-0">
-            I&apos;m a third-year BSc (Hons) Information Technology undergraduate specializing in Artificial Intelligence at the Sri Lanka Institute of Information Technology, focused on building practical AI solutions through machine learning, deep learning, computer vision, and intelligent applications.
+            Artificial Intelligence undergraduate at SLIIT with hands-on experience in Machine Learning, Deep Learning, Computer Vision, RAG, LLMs, and Agentic AI. Experienced in building intelligent systems, retrieval pipelines, AI automation, and integrating AI into full-stack applications.
           </p>
 
           <div className="hero-actions mt-5 flex flex-col items-center gap-3 sm:mt-8 sm:flex-row sm:justify-center lg:mt-6 lg:justify-start">
@@ -56,7 +56,7 @@ function Hero() {
               <ArrowRight size={18} />
             </a>
             <a
-              href="/CV_Nithushan_Uthayarasa.pdf"
+              href="/Nithushan_Uthayarasa_CV.pdf"
               download
               className="inline-flex w-full max-w-[280px] items-center justify-center gap-2 rounded-full border border-slate-700 bg-slate-900/80 px-6 py-3 text-sm font-semibold text-slate-100 transition hover:border-cyan-400/60 hover:text-cyan-300 sm:w-auto"
             >
@@ -113,19 +113,19 @@ function Hero() {
               <p className="mt-2 text-sm leading-6 text-slate-300">Developing image classification and visual recognition applications.</p>
             </div>
             <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-5">
-              <p className="text-2xl">💬</p>
-              <p className="mt-3 text-base font-semibold text-amber-300">Natural Language Processing</p>
-              <p className="mt-2 text-sm leading-6 text-slate-300">Exploring NLP techniques for intelligent language-based applications.</p>
-            </div>
-            <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-5">
               <p className="text-2xl">⚡</p>
-              <p className="mt-3 text-base font-semibold text-cyan-300">AI Applications</p>
-              <p className="mt-2 text-sm leading-6 text-slate-300">Integrating AI models into practical software and full-stack applications.</p>
+              <p className="mt-3 text-base font-semibold text-amber-300">RAG &amp; LLMs</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">Building multi-document RAG pipelines, hybrid retrieval, and conversational AI systems.</p>
             </div>
             <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-5">
               <p className="text-2xl">🤖</p>
-              <p className="mt-3 text-base font-semibold text-pink-300">Agentic AI &amp; Frameworks</p>
-              <p className="mt-2 text-sm leading-6 text-slate-300">Exploring agentic AI concepts and frameworks for building intelligent, workflow-based applications.</p>
+              <p className="mt-3 text-base font-semibold text-pink-300">Agentic AI &amp; Workflows</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">Architecting multi-agent systems, validation agents, and LangGraph workflow automation.</p>
+            </div>
+            <div className="rounded-2xl border border-slate-800 bg-slate-950/80 p-5">
+              <p className="text-2xl">🚀</p>
+              <p className="mt-3 text-base font-semibold text-cyan-300">Full-Stack AI Integration</p>
+              <p className="mt-2 text-sm leading-6 text-slate-300">Integrating intelligent AI models into robust full-stack web and mobile systems.</p>
             </div>
           </div>
         </div>

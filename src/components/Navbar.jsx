@@ -66,7 +66,7 @@ function Navbar() {
             <BriefcaseBusiness size={18} />
           </a>
           <a
-            href="/CV_Nithushan_Uthayarasa.pdf"
+            href="/Nithushan_Uthayarasa_CV.pdf"
             download
             className="inline-flex items-center gap-2 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-200 transition hover:border-cyan-300 hover:bg-cyan-500/20"
           >
@@ -114,7 +114,7 @@ function Navbar() {
                 <a href="mailto:uthayarasanithushan103@gmail.com" className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-700 bg-slate-900/80 text-slate-200">
                   <Mail size={18} />
                 </a>
-                <a href="/CV_Nithushan_Uthayarasa.pdf" download className="ml-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-200">
+                <a href="/Nithushan_Uthayarasa_CV.pdf" download className="ml-auto inline-flex items-center gap-2 rounded-full border border-cyan-400/50 bg-cyan-500/10 px-4 py-2 text-sm font-semibold text-cyan-200">
                   Resume
                   <Download size={15} />
                 </a>

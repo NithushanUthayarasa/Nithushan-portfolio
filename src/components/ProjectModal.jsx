@@ -22,7 +22,7 @@ function ProjectModal({ project, onClose }) {
           <div className="flex items-start justify-between gap-4">
             <div>
               <p className="text-xs font-medium tracking-[0.24em] text-cyan-300 uppercase">Project Details</p>
-              <h3 className="mt-3 text-2xl font-bold text-white sm:text-3xl">{project.title}</h3>
+              <h3 className="mt-3 text-xl font-bold text-white sm:text-3xl break-words">{project.title}</h3>
             </div>
             <button
               type="button"

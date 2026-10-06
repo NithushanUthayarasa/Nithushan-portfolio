@@ -1,16 +1,52 @@
 import { motion } from 'framer-motion'
-import { ArrowDown, Bot, BrainCircuit, Cpu, Sparkles } from 'lucide-react'
+import { Bot, BrainCircuit, Eye, Layers, Sparkles } from 'lucide-react'
 
-const steps = [
-  { title: 'Machine Learning', icon: BrainCircuit },
-  { title: 'Deep Learning', icon: Cpu },
-  { title: 'AI-Powered Applications', icon: Bot },
-  { title: 'AI + Full-Stack Engineering', icon: Sparkles },
+const focusAreas = [
+  {
+    title: 'Machine Learning & Deep Learning',
+    description: 'Predictive modeling, classification, model evaluation, and optimization.',
+    icon: BrainCircuit,
+    color: 'text-cyan-300',
+    bgColor: 'bg-cyan-500/10',
+    borderColor: 'border-cyan-400/20',
+  },
+  {
+    title: 'Computer Vision',
+    description: 'CNN-based image classification, preprocessing, augmentation, and performance analysis.',
+    icon: Eye,
+    color: 'text-emerald-300',
+    bgColor: 'bg-emerald-500/10',
+    borderColor: 'border-emerald-400/20',
+  },
+  {
+    title: 'RAG & LLM Systems',
+    description: 'Retrieval pipelines, embeddings, vector databases, hybrid search, reranking, and grounded generation.',
+    icon: Sparkles,
+    color: 'text-amber-300',
+    bgColor: 'bg-amber-500/10',
+    borderColor: 'border-amber-400/20',
+  },
+  {
+    title: 'Agentic AI',
+    description: 'LangGraph-based multi-agent workflows, tool execution, validation, and AI-driven automation.',
+    icon: Bot,
+    color: 'text-pink-300',
+    bgColor: 'bg-pink-500/10',
+    borderColor: 'border-pink-400/20',
+  },
+  {
+    title: 'AI + Full-Stack Engineering',
+    description: 'Integrating AI services with APIs, databases, web applications, and mobile systems.',
+    icon: Layers,
+    color: 'text-violet-300',
+    bgColor: 'bg-violet-500/10',
+    borderColor: 'border-violet-400/20',
+  },
 ]
 
 function Journey() {
   return (
-    <section className="section-shell py-20 sm:py-24">
+    <section id="focus" className="section-shell py-20 sm:py-24">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -18,47 +54,39 @@ function Journey() {
         transition={{ duration: 0.5 }}
       >
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold tracking-[0.25em] text-cyan-300 uppercase">AI / ML Journey</p>
-          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">My learning path in intelligent systems.</h2>
+          <p className="text-sm font-semibold tracking-[0.25em] text-cyan-300 uppercase">AI / ML Focus</p>
+          <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">
+            Building practical intelligent systems across modern AI technologies.
+          </h2>
         </div>
 
-        <div className="mt-10 overflow-hidden rounded-[2rem] border border-slate-800 bg-slate-900/70 p-6 shadow-[0_20px_60px_rgba(15,23,42,0.35)] sm:p-8">
-          <div className="flex flex-col items-center gap-4">
-            {steps.map(({ title, icon: Icon }, index) => (
-              <div key={title} className="flex w-full flex-col items-center">
-                <div className="glass-card flex w-full max-w-lg items-center justify-between rounded-2xl border border-slate-800 bg-slate-950/80 px-4 py-4 sm:px-5">
-                  <div className="flex items-center gap-3">
-                    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-300">
-                      <Icon size={20} />
-                    </div>
-                    <span className="text-base font-medium text-slate-100 sm:text-lg">{title}</span>
+        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {focusAreas.map(({ title, description, icon: Icon, color, bgColor, borderColor }, index) => (
+            <motion.div
+              key={title}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.4, delay: index * 0.08 }}
+              className={`glass-card flex flex-col justify-between rounded-3xl border border-slate-800 bg-slate-900/70 p-6 transition duration-300 hover:-translate-y-1 hover:border-cyan-400/40 ${
+                index === 4 ? 'sm:col-span-2 lg:col-span-1' : ''
+              }`}
+            >
+              <div>
+                <div className="flex items-center justify-between">
+                  <div className={`flex h-12 w-12 items-center justify-center rounded-2xl border ${borderColor} ${bgColor} ${color}`}>
+                    <Icon size={24} />
                   </div>
-                  <span className="text-xs font-medium tracking-[0.2em] text-slate-400 uppercase">Step {index + 1}</span>
+                  <span className="text-[10px] font-medium tracking-[0.2em] text-slate-400 uppercase">
+                    Focus Area
+                  </span>
                 </div>
 
-                {index < steps.length - 1 && (
-                  <div className="flex flex-col items-center py-2 text-cyan-300">
-                    <ArrowDown size={18} />
-                  </div>
-                )}
+                <h3 className="mt-5 text-lg font-bold text-white sm:text-xl">{title}</h3>
+                <p className="mt-3 text-sm leading-6 text-slate-300">{description}</p>
               </div>
-            ))}
-
-            <div className="flex w-full flex-col items-center pt-2">
-              <div className="flex w-full max-w-lg items-center justify-between rounded-2xl border border-cyan-400/30 bg-cyan-500/10 px-4 py-4 sm:px-5">
-                <div>
-                  <p className="text-base font-medium text-cyan-200 sm:text-lg">Agentic AI &amp; LLM Systems</p>
-                </div>
-                <span className="text-xs font-medium tracking-[0.2em] text-cyan-200 uppercase">Now</span>
-              </div>
-              <div className="flex flex-col items-center py-2 text-cyan-300">
-                <ArrowDown size={18} />
-              </div>
-              <div className="w-full max-w-lg rounded-2xl border border-violet-400/30 bg-violet-500/10 px-4 py-4 text-left sm:px-5">
-                <p className="text-base font-medium text-violet-200 sm:text-lg">Exploring agent orchestration, LLM-based applications, tool calling, and workflow-based AI systems using frameworks such as LangGraph.</p>
-              </div>
-            </div>
-          </div>
+            </motion.div>
+          ))}
         </div>
       </motion.div>
     </section>
