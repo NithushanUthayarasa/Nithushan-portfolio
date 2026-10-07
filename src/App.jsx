@@ -4,30 +4,32 @@ import About from './components/About'
 import Skills from './components/Skills'
 import Projects from './components/Projects'
 import Education from './components/Education'
-import Journey from './components/Journey'
+import Focus from './components/Focus'
 import Languages from './components/Languages'
 import ResumeSection from './components/ResumeSection'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
-
-function App() {
+import useScrollReveal from './hooks/useScrollReveal'
+export default function App() {
+  useScrollReveal()
   return (
-    <div className="min-h-screen bg-slate-950 text-slate-100">
+    <>
+      <a className="skip-link" href="#main">
+        Skip to content
+      </a>
       <Navbar />
-      <main>
+      <main id="main" tabIndex={-1}>
         <Hero />
-        <About />
-        <Skills />
         <Projects />
+        <About />
+        <Focus />
+        <Skills />
         <Education />
-        <Journey />
         <Languages />
         <ResumeSection />
         <Contact />
       </main>
       <Footer />
-    </div>
+    </>
   )
 }
-
-export default App

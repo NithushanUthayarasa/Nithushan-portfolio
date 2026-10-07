@@ -1,70 +1,48 @@
+import { Bot, BrainCircuit, Eye, Layers, ScanSearch } from 'lucide-react'
+import { SectionHeading } from './UI'
 const areas = [
-  {
-    title: 'Machine Learning',
-    description: 'Developing and evaluating predictive models using real-world datasets.',
-    icon: '🤖',
-  },
-  {
-    title: 'Deep Learning',
-    description: 'Building neural-network-based solutions for complex AI problems.',
-    icon: '🧠',
-  },
-  {
-    title: 'Computer Vision',
-    description: 'Developing image classification and visual recognition applications.',
-    icon: '👁️',
-  },
-  {
-    title: 'RAG & LLMs',
-    description: 'Building multi-document RAG pipelines, hybrid retrieval, and conversational AI systems.',
-    icon: '⚡',
-  },
-  {
-    title: 'Agentic AI & Workflows',
-    description: 'Architecting multi-agent systems, validation agents, and LangGraph workflow automation.',
-    icon: '🤖',
-  },
-  {
-    title: 'Full-Stack AI Integration',
-    description: 'Integrating intelligent AI models into robust full-stack web and mobile systems.',
-    icon: '🚀',
-  },
+  [
+    BrainCircuit,
+    'Machine Learning & Deep Learning',
+    'Predictive modeling, classification, neural networks, model evaluation, and optimization.',
+  ],
+  [
+    Eye,
+    'Computer Vision',
+    'CNN-based image classification, preprocessing, augmentation, and performance analysis.',
+  ],
+  [
+    ScanSearch,
+    'RAG & LLM Systems',
+    'Embeddings, vector databases, hybrid retrieval, reranking, and grounded generation.',
+  ],
+  [
+    Bot,
+    'Agentic AI',
+    'LangGraph multi-agent workflows, tool execution, validation, and AI-driven automation.',
+  ],
+  [
+    Layers,
+    'AI + Full-Stack Engineering',
+    'AI services connected to APIs, databases, web applications, and mobile systems.',
+  ],
 ]
-
-function FocusCard({ area, index }) {
+export default function Focus() {
   return (
-    <div
-      className="glass-card rounded-3xl border border-slate-800 bg-slate-900/70 p-6 w-full"
-      style={{ animationDelay: `${index * 80}ms` }}
-    >
-      <span className="text-3xl">{area.icon}</span>
-      <h3 className="mt-4 text-lg font-semibold text-white">{area.title}</h3>
-      <p className="mt-2 text-sm text-slate-400 leading-relaxed">{area.description}</p>
-    </div>
-  )
-}
-
-function Focus() {
-  return (
-    <section id="focus" className="section-shell py-20 sm:py-24">
-      <div>
-        <p className="text-sm font-semibold tracking-[0.25em] text-cyan-300 uppercase">Expertise</p>
-        <h2 className="mt-4 text-3xl font-bold text-white sm:text-4xl">Areas of Focus</h2>
-      </div>
-
-      <div className="mt-10 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-        {areas.slice(0, 3).map((area, i) => (
-          <FocusCard key={area.title} area={area} index={i} />
-        ))}
-      </div>
-
-      <div className="mt-6 grid gap-6 grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 lg:w-2/3 lg:mx-auto">
-        {areas.slice(3).map((area, i) => (
-          <FocusCard key={area.title} area={area} index={i + 3} />
+    <section id="focus" className="section-shell section">
+      <SectionHeading
+        label="03 / AI & ML focus"
+        title="The systems I like to build."
+      />
+      <div className="focus-grid">
+        {areas.map(([Icon, title, description]) => (
+          <article className="focus-card" key={title}>
+            <Icon size={23} strokeWidth={1.5} />
+            <h3>{title}</h3>
+            <p>{description}</p>
+          </article>
         ))}
       </div>
     </section>
   )
 }
-
-export default Focus

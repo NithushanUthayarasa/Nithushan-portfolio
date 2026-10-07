@@ -1,9 +1,14 @@
 export const projects = [
   {
     id: 1,
+    cardTitle: 'ContextIQ',
+    subtitle: 'RAG-Powered Intelligence System',
+    cardTags: ['RAG / LLMs', 'ChromaDB', 'Gemini', 'BM25 / RRF', 'Streamlit'],
+    flow: ['Documents', 'Hybrid retrieval', 'Grounded answers'],
     title: 'ContextIQ – RAG-Powered Intelligence System',
     category: 'RAG & LLMs',
-    description: 'Multi-document RAG system with grounded answers, page-level citations, and conversational query handling.',
+    description:
+      'Multi-document RAG system with grounded answers, page-level citations, and conversational query handling.',
     technologies: [
       'Python',
       'RAG',
@@ -24,9 +29,12 @@ export const projects = [
     ],
     github: 'https://github.com/NithushanUthayarasa/ContextIQ-RAG-System',
     liveDemo: 'https://contextiq-ai-rag.streamlit.app/',
-    overview: 'Built a multi-document RAG system featuring grounded answers, page-level citations, conversational query handling, and comprehensive quantitative evaluation.',
-    problem: 'Standard LLMs often suffer from factual hallucinations and lack verifiable citations when queried against lengthy domain documents.',
-    solution: 'Engineered a modular hybrid retrieval pipeline combining Gemini embeddings in ChromaDB with BM25 lexical search, reciprocal rank fusion, parent-child chunking, and contextual compression.',
+    overview:
+      'Built a multi-document RAG system featuring grounded answers, page-level citations, conversational query handling, and comprehensive quantitative evaluation.',
+    problem:
+      'Standard LLMs often suffer from factual hallucinations and lack verifiable citations when queried against lengthy domain documents.',
+    solution:
+      'Engineered a modular hybrid retrieval pipeline combining Gemini embeddings in ChromaDB with BM25 lexical search, reciprocal rank fusion, parent-child chunking, and contextual compression.',
     features: [
       'Multi-document parsing and ingestion with PyMuPDF',
       'ChromaDB vector database with Google Gemini embeddings',
@@ -35,13 +43,23 @@ export const projects = [
       'Conversational query handling and context compression',
       'Retrieval inspection and automated testing suite',
     ],
-    results: 'Evaluated quantitatively using Hit@K, Recall@K, Mean Reciprocal Rank (MRR), citation precision metrics, and ablation tests for retrieval performance tracking.',
+    results:
+      'Evaluated quantitatively using Hit@K, Recall@K, Mean Reciprocal Rank (MRR), citation precision metrics, and ablation tests for retrieval performance tracking.',
   },
   {
     id: 2,
+    cardTags: [
+      'LangGraph',
+      'FastAPI',
+      'ASP.NET Core',
+      'React / Flutter',
+      'PostgreSQL',
+    ],
+    flow: ['Plan & extract', 'Validate', 'Coordinate'],
     title: 'Automated Manufacturing Inventory Coordinator',
     category: 'Agentic AI',
-    description: 'AI-enabled manufacturing and inventory coordination system combining full-stack workflows with a multi-agent AI architecture.',
+    description:
+      'AI-enabled manufacturing and inventory coordination system combining full-stack workflows with a multi-agent AI architecture.',
     technologies: [
       'Python',
       'Agentic AI',
@@ -62,11 +80,15 @@ export const projects = [
       'Developed a Validation & Safety agent verifying suppliers, materials, PO calculations, and budget thresholds',
       'Integrated validation and inventory recommendation logic into a four-agent LangGraph workflow',
     ],
-    github: 'https://github.com/ChandranSukirthan/Automated-Manufacturing-Inventory-Coordinator.git',
+    github:
+      'https://github.com/ChandranSukirthan/Automated-Manufacturing-Inventory-Coordinator.git',
     liveDemo: '',
-    overview: 'Collaborative team project building an AI-enabled manufacturing and inventory coordination system combining full-stack cross-platform workflows with multi-agent orchestration.',
-    problem: 'Manufacturing operations encounter delays and errors when managing material defects, supplier compliance, inventory roll quarantine, and purchase order safety checks manually.',
-    solution: 'Designed full-stack defect tracking and integrated an autonomous Validation and Safety agent within a four-agent LangGraph pipeline collaborating across Planner, Data Extraction, Purchasing, and Validation responsibilities.',
+    overview:
+      'Collaborative team project building an AI-enabled manufacturing and inventory coordination system combining full-stack cross-platform workflows with multi-agent orchestration.',
+    problem:
+      'Manufacturing operations encounter delays and errors when managing material defects, supplier compliance, inventory roll quarantine, and purchase order safety checks manually.',
+    solution:
+      'Designed full-stack defect tracking and integrated an autonomous Validation and Safety agent within a four-agent LangGraph pipeline collaborating across Planner, Data Extraction, Purchasing, and Validation responsibilities.',
     features: [
       'Defect reporting and inventory roll quarantine/release workflows across web and mobile',
       'Validation and Safety agent checking suppliers, materials, PO calculations, and budgets prior to approval',
@@ -75,13 +97,21 @@ export const projects = [
       'Cross-platform interfaces built with ASP.NET Core backend, React web, and Flutter mobile apps',
       'Validation results and comprehensive audit history persisted in PostgreSQL',
     ],
-    results: 'Successfully automated cross-departmental coordination, minimizing human validation errors and delivering auditable inventory recommendations.',
+    results:
+      'Successfully automated cross-departmental coordination, minimizing human validation errors and delivering auditable inventory recommendations.',
   },
   {
     id: 3,
+    cardTags: [
+      'CNN',
+      'Transfer Learning',
+      'TensorFlow/Keras',
+      'Computer Vision',
+    ],
     title: 'Garbage Image Classification',
     category: 'Deep Learning & Computer Vision',
-    description: 'Developed a CNN transfer learning model to classify waste across 10 categories using more than 20,000 images.',
+    description:
+      'Developed a CNN transfer learning model to classify waste across 10 categories using more than 20,000 images.',
     technologies: [
       'Python',
       'TensorFlow/Keras',
@@ -98,11 +128,15 @@ export const projects = [
       'Implemented data preprocessing, normalization, and data augmentation pipelines',
       'Evaluated comprehensively with precision, recall, F1-score analysis, and confusion matrices',
     ],
-    github: 'https://github.com/NithushanUthayarasa/SmartWaste-Image-Classification-CNN',
+    github:
+      'https://github.com/NithushanUthayarasa/SmartWaste-Image-Classification-CNN',
     liveDemo: '',
-    overview: 'A deep learning computer vision model utilizing transfer learning to accurately categorize waste materials across 10 distinct classes for automated sorting.',
-    problem: 'Manual waste segregation is inefficient and error-prone. Scalable automated recycling requires high-accuracy visual recognition across diverse waste types.',
-    solution: 'Implemented a CNN transfer learning architecture with thorough image preprocessing, data augmentation, checkpointing, and extensive performance evaluation.',
+    overview:
+      'A deep learning computer vision model utilizing transfer learning to accurately categorize waste materials across 10 distinct classes for automated sorting.',
+    problem:
+      'Manual waste segregation is inefficient and error-prone. Scalable automated recycling requires high-accuracy visual recognition across diverse waste types.',
+    solution:
+      'Implemented a CNN transfer learning architecture with thorough image preprocessing, data augmentation, checkpointing, and extensive performance evaluation.',
     features: [
       'Transfer learning convolutional neural network architecture',
       'Image preprocessing, normalization, and real-time data augmentation',
@@ -110,13 +144,22 @@ export const projects = [
       'Comprehensive train, validation, and test dataset splits',
       'Detailed confusion matrix and classification report generation',
     ],
-    results: 'Attained 88.6% test accuracy with robust precision, recall, and F1-scores across all 10 waste categories.',
+    results:
+      'Attained 88.6% test accuracy with robust precision, recall, and F1-scores across all 10 waste categories.',
   },
   {
     id: 4,
+    cardTags: [
+      'CatBoost',
+      'XGBoost',
+      'LightGBM',
+      'Feature Engineering',
+      'Evaluation',
+    ],
     title: 'Cyber Threats & Financial Loss Prediction',
     category: 'Machine Learning',
-    description: 'Built an end-to-end machine learning pipeline for predicting high-risk financial losses from cyber incidents.',
+    description:
+      'Built an end-to-end machine learning pipeline for predicting high-risk financial losses from cyber incidents.',
     technologies: [
       'Python',
       'Pandas',
@@ -132,11 +175,15 @@ export const projects = [
       'Conducted feature engineering, preprocessing, cross-validation, and threshold optimization',
       'Evaluated using Accuracy, Macro F1, Recall, ROC-AUC, and feature importance analysis',
     ],
-    github: 'https://github.com/NithushanUthayarasa/CyberThreat-Financial-Loss-Prediction-ML',
+    github:
+      'https://github.com/NithushanUthayarasa/CyberThreat-Financial-Loss-Prediction-ML',
     liveDemo: '',
-    overview: 'An end-to-end machine learning pipeline predicting high-risk financial losses resulting from cyber security incidents to assist enterprise risk mitigation.',
-    problem: 'Cyber security teams need early financial impact signals from incident telemetry to prioritize high-risk containment efforts.',
-    solution: 'Engineered an end-to-end ML classification pipeline, benchmarking multiple gradient boosting and tree algorithms with hyperparameter tuning and threshold optimization.',
+    overview:
+      'An end-to-end machine learning pipeline predicting high-risk financial losses resulting from cyber security incidents to assist enterprise risk mitigation.',
+    problem:
+      'Cyber security teams need early financial impact signals from incident telemetry to prioritize high-risk containment efforts.',
+    solution:
+      'Engineered an end-to-end ML classification pipeline, benchmarking multiple gradient boosting and tree algorithms with hyperparameter tuning and threshold optimization.',
     features: [
       'Structured feature engineering and preprocessing on incident telemetry',
       'Benchmarking Random Forest, CatBoost, XGBoost, LightGBM, and Extra Trees',
@@ -144,6 +191,7 @@ export const projects = [
       'Decision threshold optimization for high-risk incident identification',
       'Feature importance analysis interpreting key drivers of financial loss',
     ],
-    results: 'Selected CatBoost as the best-performing model based on superior Macro F1, Recall, and ROC-AUC metrics.',
+    results:
+      'Selected CatBoost as the best-performing model based on superior Macro F1, Recall, and ROC-AUC metrics.',
   },
 ]
