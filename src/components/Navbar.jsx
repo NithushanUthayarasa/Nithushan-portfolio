@@ -57,7 +57,7 @@ export default function Navbar() {
           onClick={() => setOpen(false)}
           aria-label="Nithushan, home"
         >
-          nithushan<span>.</span>
+          Nithushan<span>.</span>
         </a>
         <div className="desktop-nav">
           {links.map(([label, id]) => (
