@@ -6,7 +6,7 @@ Third-year BSc (Hons) Information Technology undergraduate specializing in Artif
 
 I build practical AI and machine learning systems with a focus on machine learning, deep learning, computer vision, retrieval-augmented generation, large language models, vector databases, and agentic AI workflows.
 
-[Live Portfolio](https://nithushan-portfolio.vercel.app/) · [GitHub](https://github.com/NithushanUthayarasa) · [LinkedIn](https://www.linkedin.com/in/nithushan-uthayarasa-6a4819377/)
+**Live Portfolio:** [nithushan-portfolio.vercel.app](https://nithushan-portfolio.vercel.app/)
 
 ---
 
