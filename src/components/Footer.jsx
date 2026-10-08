@@ -1,13 +1,7 @@
-import { SocialLinks } from './UI'
 export default function Footer() {
   return (
-    <footer className="section-shell footer">
-      <div>
-        <strong>Nithushan Uthayarasa</strong>
-        <p>AI/ML Undergraduate</p>
-      </div>
-      <SocialLinks />
-      <p>© {new Date().getFullYear()} Nithushan Uthayarasa</p>
+    <footer className="section-shell copyright-footer">
+      <p>© {new Date().getFullYear()} Nithushan Uthayarasa. All rights reserved.</p>
     </footer>
   )
 }

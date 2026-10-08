@@ -2034,3 +2034,11 @@ dd {
     max-width: 100%;
   }
 }
+
+.copyright-footer {
+  border-top: 1px solid var(--border);
+  padding-block: 22px 28px;
+  color: var(--text-muted);
+  font-size: 11px;
+  text-align: center;
+}
