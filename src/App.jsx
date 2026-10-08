@@ -8,7 +8,6 @@ import Focus from './components/Focus'
 import Languages from './components/Languages'
 import ResumeSection from './components/ResumeSection'
 import Contact from './components/Contact'
-import Footer from './components/Footer'
 import useScrollReveal from './hooks/useScrollReveal'
 export default function App() {
   useScrollReveal()
@@ -29,7 +28,6 @@ export default function App() {
         <ResumeSection />
         <Contact />
       </main>
-      <Footer />
     </>
   )
 }
