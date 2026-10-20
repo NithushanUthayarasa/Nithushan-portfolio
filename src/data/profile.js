@@ -3,5 +3,5 @@ export const profile = {
   linkedin:
     'https://www.linkedin.com/in/nithushan-uthayarasa-6a4819377/?isSelfProfile=false',
   email: 'uthayarasanithushan103@gmail.com',
-  resume: '/CV_Nithushan_Uthayarasa.pdf',
+  resume: '/Nithushan_Uthayarasa_CV.pdf',
 }

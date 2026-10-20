@@ -22,7 +22,7 @@ export default function ResumeSection() {
           <a
             className="button primary"
             href={profile.resume}
-            download="CV_Nithushan_Uthayarasa.pdf"
+            download="Nithushan_Uthayarasa_CV.pdf"
           >
             Download Resume
             <Download size={16} />
